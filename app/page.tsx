@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
           </div>
         </div>
         <div className="flex justify-end">
-          <Link className="bg-custom-gold w-2/5 text-center rounded-full animate-pulse p-2 text-custom-purple text-bold text-xl" href="/game">Let's Play!</Link>
+          <Link className="bg-custom-gold w-2/5 text-center rounded-full animate-pulse p-2 text-custom-purple text-bold text-xl" href="/game">Let&apos;s Play!</Link>
         </div>
       </div>
     </main>

@@ -24,7 +24,7 @@ const GamePage = () => {
     const numberOfPairs: number = 6
 
     //API call to draw a random MTG card and push it to cards array twice for two copies then sort random
-    const fetchCards = async () => {
+    const fetchCards = React.useCallback(async () => {
 
         let fetchedCards: Array<Card> = [];
 
@@ -42,11 +42,11 @@ const GamePage = () => {
             .sort(() => Math.random() - 0.5)
             .map((card) => ({ ...card, uniqueId: Math.random(), matched: false }));
         setCards(fetchedCards);
-    };
+    }, []);
 
     useEffect(() => {
         fetchCards();
-    }, []);
+    }, [fetchCards]);
 
    
     //When a card is selected set it to either choice one or choice two
