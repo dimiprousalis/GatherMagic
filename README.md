@@ -1,36 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Gather the Magic
+Magic Memory Game is a React-based web application where users can play a memory game with Magic: The Gathering cards. The objective of the game is to flip cards over and memorize their positions to gather pairs of matching cards in as few turns as possible.
 
-## Getting Started
+**Live Website: https://gather-the-magic.netlify.app/**
 
-First, run the development server:
+## Features
+- Dynamic card generation: Fetches random Magic: The Gathering cards from an API and duplicates them to create pairs for the game.
+- Memory game logic: Allows users to flip cards and matches pairs based on card names.
+- Turn counter: Keeps track of the number of turns taken to complete the game.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Built With
+- React: A JavaScript library for building user interfaces.
+- Next.js: A React framework for server-rendered applications.
+- Tailwind CSS: A utility-first CSS framework for styling.
+- TypeScript: A statically typed superset of JavaScript.
+- Scryfall API: Provides access to Magic: The Gathering card data.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Installation
+1. Clone the repository: git clone https://github.com/dimiprousalis/GatherMagic.git
+2. Navigate to the project directory: cd magic
+3. Install dependencies: npm install
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Usage
+- Start the development server: npm run dev
+- Open your browser and go to http://localhost:3000
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
